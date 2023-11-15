@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+html,
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+.attribution {
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin: -5px auto;
+    padding: 0.2rem 0.5rem;
+    border-bottom-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    color: #FE1B02;
+    background-color: #fff;
+    width: fit-content;
+}
+
+button {
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    color: #FE1B02;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+
+header {
+    background-color: #FE1B02;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border-bottom: 2px solid #ffffffaa;
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+header #logo img {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+}
+
+header #logo p {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FE1B02;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+header nav ul li a:hover {
+    color: #FE1B02;
+    background-color: #fff;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    padding: 100px 200px;
+    background-color: #FE1B02CC;
+    position: relative;
+}
+
+main video {
+    z-index: -1;
+    position: absolute;
+    flex: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: fill;
+}
+
+main #main-left {
+    flex: 1;
+}
+
+main #main-left h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+main #main-left p {
+    color: #fff;
+}
+
+main #main-right {
+    flex: 1.5;
+}
+
+main #main-right img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 0;
+}
+
+#menu h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #FE1B02;
+    padding-bottom: 1rem;
+}
+
+#menu {
+    margin: 50px;
+}
+
+#menu #menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    flex-flow: row wrap;
+}
+
+#menu #menu-items div {
+    width: 250px;
+    background-color: #FF680B33;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
+
+#menu #menu-items div img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #FE1B02;
+    border-radius: 1rem;
+    margin: 0;
+
+}
+
+#menu #menu-items div .attribution {
+    background-color: #FF680B;
+    color: #fff;
+}
+
+#menu #menu-items div .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FE1B02;
+}
+
+#quote {
+    background-color: #ddd;
+    margin: 50px 0;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#quote blockquote {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#quote blockquote p {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+#quote blockquote cite {
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+#modal {
+    background-color: #FF680B;
+    margin: 50px 200px;
+    padding: 50px 200px;
+    display: flex;
+    border-radius: 1rem;
+    color: #fff;
+    gap: 50px;
+}
+
+#modal p {
+    margin: 0;
+    padding: 0;
+}
+
+#modal #title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#modal #modal-right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
